@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
+    <title>Task Runner</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Task Runner</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="colNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Add Task</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ManageTasks.html"> Manage Task </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-6 container-fluid m-auto formContainer">
+                <form id="newTaskForm" onsubmit="validFormFieldInput()">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Task Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter task name, id etc..." >
+                        <span id="errorMessage"> please enter name </span>
+                       
+                    </div>
+                    <div class="form-group">
+                        <label for="detailedDescription">Detail Discription</label>
+                        <textarea id="detailedDescription" class="form-control" placeholder="Enter your discription" rows="3"></textarea> 
+                        <span id="errorMessage2"> please enter detail description </span>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="assignedTo" class="form-label">Assigned To</label>
+                        <input type="text" class="form-control" id="assignedTo"  placeholder="Enter associate name" >
+                        <span id="errorMessage3"> please enter assigned person </span>
+                    </div>
+                    <br>
+
+                    <label for="start">Due date: </label>
+                    <input type="date" id="date">
+                    <span id="errorMessage4"> please pick a date </span>
+
+                    <div class="col">
+                        <br>
+                    <button type="submit" class="btn btn-dark" submitBtn value="send data">Add New Task</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+        <br><br><hr><br><br>
+                <div class ="col-md-4 container-fluid m-auto">
+                    <span id="tasksList"></span>
+                </div>
+                
+                
+          
+<!-- <div class="container col-lg-6 list group" id="tasksList"></div>  -->
+
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>

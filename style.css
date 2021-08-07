@@ -1,0 +1,37 @@
+
+/* @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 20px;
+    };
+*/
+
+.formContainer{
+    background: rgba( 78, 82, 116, 0.25 );
+    /*box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );*/
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 15px;
+    margin-bottom: 20px;
+    
+    };
+
+.button{
+    position:absolute;
+    bottom:0
+
+};
+
+.button-box {
+  text-align:right;
+  margin-top:20px;
+ }
+
+.submitBtn{
+  cursor: pointer;
+}
+
+  
